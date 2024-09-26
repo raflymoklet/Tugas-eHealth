@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <p>This is Table Diagnosa.</p>
+    <table border="1">
+      <tr>
+        <th>Code</th>
+        <th>Display</th>
+      </tr>
+      <% for (var i = 0; i < data.length; i++) { %>
+      <tr>
+        <td><%= data[i].code %></td>
+        <td><%= data[i].display %></td>
+      </tr>
+      <% } %>
+    </table>
+  </body>
+</html>
